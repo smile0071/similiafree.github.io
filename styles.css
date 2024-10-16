@@ -333,32 +333,38 @@ button {
   background-size: cover;
   z-index: 26;
 }
-.rectangle-1 {
-  position: relative;
-  width: 243px;
-  height: 84px;
-  margin: 55px 0 0 598px;
-  border: 1px solid #e5e5e5;
-  z-index: 12;
-  border-radius: 100px;
-}
+
 .book-now-2 {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   position: absolute;
-  width: 166px;
-  height: 36px;
-  top: 28px;
-  left: calc(50% - 83.5px);
+  width: 243px;
+  height: 84px;
+  margin: 21px 0 0 598px;
+  background-color: #686867;
+  /* Белый цвет фона */
   color: #ffffff;
-  font-family: ITC Avant Garde Gothic Std, var(--default-font-family);
+  /* Темно-серый цвет текста */
+  font-family: 'ITC Avant Garde Gothic Std', var(--default-font-family);
   font-size: 30px;
   font-weight: 275;
   line-height: 36px;
   text-align: center;
-  white-space: nowrap;
-  z-index: 12;
+  border-radius: 42px;
+  border: 2px solid #ffffff;
+  /* Белый контур */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 29;
+}
+
+/* Эффект при наведении */
+.book-now-2:hover {
+  background-color: #3c3c3c;
+  color: #ffffff;
+  /* Белый цвет текста при наведении */
+  /* Более темный серый цвет при наведении */
 }
 .location {
   display: block;
